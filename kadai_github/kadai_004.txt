@@ -1,0 +1,34 @@
+PS C:\Users\arona> cd git_challenge
+PS C:\Users\arona\git_challenge> git status
+On branch main
+
+PS C:\Users\arona\git_challenge> git add hello_world.txt
+
+PS C:\Users\arona\git_challenge> git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   hello_world.txt
+
+PS C:\Users\arona\git_challenge> git commit -m "hello_world.txtを追加"
+[main 69729c4] hello_world.txtを追加
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+PS C:\Users\arona\git_challenge> git log                
+commit 69729c465bfa2adb8d1cf41c262211580afe34ed (HEAD -> main)
+Author: arona-09261106 <arona-09261106@cf7.so-net.ne.jp>
+Date:   Tue Jan 16 20:56:24 2024 +0900
+
+    hello_world.txtを追加
+
+commit 4e2b683175cf05137d297c3212fbf1ce1427830e
+Author: arona-09261106 <arona-09261106@cf7.so-net.ne.jp>
+Date:   Tue Jan 16 20:46:11 2024 +0900
+
+    日本語訳を追加
+PS C:\Users\arona\git_challenge> git add hello_world.txt       
+PS C:\Users\arona\git_challenge> git commit -m "日本語訳を追加"       
+[main 4eb638d] 日本語訳を追加
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS C:\Users\arona\git_challenge> git log --oneline       
+4eb638d (HEAD -> main) 日本語訳を追加
+69729c4 hello_world.txtを追加
